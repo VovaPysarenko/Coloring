@@ -48,9 +48,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sliderGreenDragged() {
+        viewColour.backgroundColor = .green
+        currentValueGreen.text = String(format: "%.2f", sliderGreen.value)
         
     }
     @IBAction func sliderBlueDragged() {
+        viewColour.backgroundColor = .blue
+        currentValueBlue.text = String(format: "%.2f", sliderBlue.value)
     }
 }
 
