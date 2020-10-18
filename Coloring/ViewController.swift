@@ -37,7 +37,6 @@ class ViewController: UIViewController {
         viewColour.layer.cornerRadius = 10
         viewColour.backgroundColor = .red
         viewColour.backgroundColor = viewColour.backgroundColor?.withAlphaComponent(CGFloat(sliderRed.value))
-        
     }
     
    private func mixColors() {
@@ -47,9 +46,6 @@ class ViewController: UIViewController {
         
         let colorView = UIColor(red: red, green: green, blue: blue, alpha: 1)
         viewColour.backgroundColor = colorView
-        
-
-
     }
 
     @IBAction func sliderRedDragged() {
@@ -66,7 +62,6 @@ class ViewController: UIViewController {
         viewColour.backgroundColor = viewColour.backgroundColor?.withAlphaComponent(value)
         currentValueGreen.text = String(format: "%.2f", sliderGreen.value)
         mixColors()
-        
     }
     @IBAction func sliderBlueDragged() {
         let value = CGFloat(sliderBlue.value)
