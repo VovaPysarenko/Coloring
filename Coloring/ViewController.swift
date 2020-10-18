@@ -35,8 +35,7 @@ class ViewController: UIViewController {
         
         //View
         viewColour.layer.cornerRadius = 10
-        viewColour.backgroundColor = .red
-        viewColour.backgroundColor = viewColour.backgroundColor?.withAlphaComponent(CGFloat(sliderRed.value))
+        mixColors()
     }
     
    private func mixColors() {
