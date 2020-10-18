@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Coloring
 //
-//  Created by Marina on 16.10.2020.
+//  Created by Vova on 16.10.2020.
 //
 
 import UIKit
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         
     }
     
-    func mixColors() {
+   private func mixColors() {
         let red = CGFloat(sliderRed.value)
         let green = CGFloat(sliderGreen.value)
         let blue = CGFloat(sliderBlue.value)
